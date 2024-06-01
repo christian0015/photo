@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Sneakers</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div class="relative w-72 h-96 bg-white shadow-lg custom-clip">
+        <img src="nike-sneakers.jpg" alt="Nike Sneakers" class="w-full h-full object-cover">
+        <div class="absolute top-4 left-4 text-white">
+            <h2 class="text-2xl font-bold">NIKE</h2>
+            <p class="text-lg">Sneakers</p>
+        </div>
+        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white bg-opacity-80 rounded-full px-4 py-2">
+            <button class="text-black">REFRESH</button>
+        </div>
+    </div>
+</body>
+<footer><div id="canvas3d"></div><iframe src='https://my.spline.design/polaroidgocopy-a0d20aff0f2486f1fee3547c7060f8b0/' frameborder='0' width='100%' height='100%'></iframe></footer>
+<!-- 
+.custom-clip {
+    clip-path: polygon(0 0, 100% 100%, 100% calc(100% - 100px), calc(100% - 100px) 100%, 0 100%, 
+                        0 0, 100% 0, 100% 900px, calc(100% - 100px) 100%, 0 100%);
+    clip-path: path("M 0 0 H 100% V calc(100% - 50px) Q 100% 100% calc(100% - 50px) 100% H 0 Z");
+    border-radius: 20px; -->
+
+<style>
+    .custom-clip {
+    clip-path: polygon(0 0, 100% 100%, 100% calc(100% - 100px), calc(100% - 900px) 100%, 0 100%, 
+                       0 0, 100% 0, 100% 100%, calc(100% - 300px) 100%, 0 100%);
+
+
+    clip-path: path("M 0 0 H 100% V calc(100% - 50px) Q 100% 100% calc(100% - 50px) 100% H 0 Z");
+    border-radius: 20px;
+    background-color: #345;
+}
+
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2a2a2a;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    height: 80vh;
+    margin-top: 50px;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #000;
+    padding: 20px;
+    border-radius: 0 50px 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    clip-path: path("M 0 0 H 300 V 400 Q 280 350 300 300 V 10000 Z");
+}
+
+.sidebar h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.sidebar p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+
+.main-content {
+    flex: 1;
+    background: linear-gradient(145deg, #234, #345);
+    padding: 40px;
+    border-radius: 50px 0 0 50px;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact-button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.hero {
+    margin-top: 50px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 20px;
+    max-width: 600px;
+}
+
+.info-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+</style>
+</html>
+<!-- <script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
+<spline-viewer url="https://prod.spline.design/LEvjG3OETYd2GsRw/scene.splinecode"></spline-viewer> -->
+
+
+<Script>
+    import { Application } from '@splinetool/runtime';
+
+const canvas = document.getElementById("canvas3d");
+const app = new Application(canvas);
+app.load('https://prod.spline.design/LoGpbaq2IBFaWcxp/scene.splinecode');
+
+</Script>
