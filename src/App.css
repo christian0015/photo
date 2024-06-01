@@ -201,22 +201,33 @@ nav{
 .header-titte{
   margin-top: 80px;
 }
-.header-order-contenair{padding: 0px 0 25px 20px;}
+.header-titte1{
+  font-size: 40px;
+}
+.header-titte2{
+  font-size: 30px;
+}
+.header-order-contenair{padding: 0px 0 10px 12px;}
 .header-order{
-  padding: 20px;
-  font-size: 20px;
+  padding: 12px;
+  font-size: 16px;
 }
 /* *************** Article Screen *************** */
 article{
-  top:25%;
+  top:7%;
+}
+article iframe{
+  scale :0.7;
+  width: 140%;
+  margin-left: -75px;
 }
 /* *************** Aside Screen *************** */
 aside{
   padding-right: 5px;
-  margin-top: 200px;
+  margin-top: 100px;
 }
 .notification-list{
-  width: 300px;
+  width: 250px;
   height: 40vh;
 }
 .notification-block{
@@ -225,11 +236,11 @@ aside{
   background-color: #cccccc1e;
 }
 .notification-block-title{
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
   font-family: "Exo 2", sans-serif;
 }.notification-block-description{
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Exo 2", sans-serif;
   font-weight: 200;
 }
