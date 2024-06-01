@@ -24,7 +24,8 @@
   justify-content: space-between;
   padding: 10px;
   color: white;
-}.header-titte{}
+}
+/* .header-titte{} */
 .header-titte1{
   font-size: 80px;
   font-family: "Exo 2", sans-serif;
@@ -169,6 +170,8 @@ rate{
 }
 .bottom-header-logo{
   font-size: 20px;
+  width: 60px;
+  border-radius: 100%;
 }
 nav{
   display: flex;
@@ -185,6 +188,11 @@ nav{
   padding: 5px;
   border-radius: 20px;
   border: solid 1px white;
+}
+.bottom-header-items:hover{
+  background-color: #141816;
+  box-shadow: 10px 10px 10px #141816;
+  transition: .5s;
 }
 
 

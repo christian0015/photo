@@ -1,13 +1,23 @@
 import React, { useEffect, useState } from 'react';
-import logo from './logo.svg';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Assurez-vous d'importer le fichier CSS d'AOS
+// import logo from './logo.svg';
+// import logo from '../public/Fusion-Inc-logo.jpg';
+import logo from './Fusion-Inc-logo.jpg';
 import './App.css';
 import './component/aboutComponent';
 import AboutComponent from './component/aboutComponent';
+import CarouselComponent from './component/carouselComponent';
 
 function App() {
   const [message, setMessage] = useState('');
 
     useEffect(() => {
+      AOS.init();
+      AOS.init({
+        duration: 3000, // Durée de base
+        delay: (el, i) => i * 3000, // Délai croissant pour chaque lettre
+      });
         fetch('/api/message')
             .then(response => response.json())
             .then(data => setMessage(data.message));
@@ -19,8 +29,16 @@ function App() {
       <section className='section1'>
           <header className='header'>
             <div className='header-titte'>
-              <div className='header-titte1'>ELEVATE YOUR</div>
-              <div className='header-titte2'>PHOTO EXPERIENCE</div>
+              <div className='header-titte1'>
+                {Array.from('ELEVATE YOUR').map((letter, index) => (
+                  <span key={index} data-aos="fade-right" className='header-titte1'>{letter}</span>
+                ))}
+              </div>
+              <div className='header-titte2'>
+                {Array.from('PHOTO EXPERIENCE').map((letter, index) => (
+                  <span key={index} data-aos="fade-right" className='header-titte2'>{letter}</span>
+                ))}
+              </div>
             </div>
             <div className='header-order-contenair'>
               <div className='header-order'>PRE-ORDER</div>
@@ -28,21 +46,21 @@ function App() {
           </header>
 
           <article>
-          <iframe src='https://my.spline.design/polaroidgocopy-a0d20aff0f2486f1fee3547c7060f8b0/' frameborder='0' width='100%' height='100%'></iframe>
+          <iframe src='https://my.spline.design/polaroidgocopy-a0d20aff0f2486f1fee3547c7060f8b0/' data-aos="zoom-in" frameborder='0' width='100%' height='100%'></iframe>
           </article>
 
           <aside>
             <div className='notification'>
               <div className='notification-list'>
-                <div className='notification-block'>
-                  <div className='notification-block-title'>ADVANCED TECCHNOLOGY</div>
+                <div className='notification-block' data-aos="zoom-in-up" data-aos-duration="1000">
+                  <div className='notification-block-title' >ADVANCED TECCHNOLOGY</div>
                   <div className='notification-block-description'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   </div>
                 </div>
 
-                <div className='notification-block'>
+                <div className='notification-block' data-aos="zoom-in-up" data-aos-duration="3000">
                   <div className='notification-block-title'>FUTURISTIC DESIGN</div>
                   <div className='notification-block-description'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -55,11 +73,11 @@ function App() {
 
           <rate>
             <div className='rate-img'>
-               <img src="https://i.pinimg.com/236x/5c/a8/b7/5ca8b757fa4f5fd245a50338319eb415.jpg" className="rate-img-profil" alt="logo" />
-               <img src="https://img.freepik.com/premium-photo/illustration-beautiful-girl-with-long-hair_218381-22749.jpg" className="rate-img-profil" alt="logo" />
-               <img src="https://i.pinimg.com/736x/de/4f/9b/de4f9bee36a70826cde1d6750b6d78ec.jpg" className="rate-img-profil" alt="logo" />
+               <img src="https://i.pinimg.com/236x/5c/a8/b7/5ca8b757fa4f5fd245a50338319eb415.jpg" className="rate-img-profil" alt="logo" data-aos="zoom-in-right" />
+               <img src="https://img.freepik.com/premium-photo/illustration-beautiful-girl-with-long-hair_218381-22749.jpg" className="rate-img-profil" alt="logo" data-aos="zoom-in-right" />
+               <img src="https://i.pinimg.com/736x/de/4f/9b/de4f9bee36a70826cde1d6750b6d78ec.jpg" className="rate-img-profil" alt="logo" data-aos="zoom-in-right" />
             </div>
-            <div className='rate-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, consectetur adipiscing elit.</div>
+            <div className='rate-text' data-aos="zoom-in-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, consectetur adipiscing elit.</div>
           </rate>
 
           <div className='bottom-header'>
@@ -70,7 +88,7 @@ function App() {
               </div>
             </div>
             <div className='bottom-header2'>
-              <div className='bottom-header-logo'>ZENITH</div>
+              <div className='bottom-header-logo'><img className='bottom-header-logo' src={logo}/></div>
               <nav>
               <a href=""  rel="noopener noreferrer" className='bottom-header-items'>Home</a>
               <a href="#About"  rel="noopener noreferrer" className='bottom-header-items'>About</a>
@@ -87,6 +105,11 @@ function App() {
       <br/>
       <br/>
       <br/>
+      <section className='sectionCarrousel'>
+        <CarouselComponent/>
+      </section>
+
+
       <header className="r">
         {/* <img src={lgo} className="App-logo" alt="logo" /> */}
         {/* <a
