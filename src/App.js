@@ -25,7 +25,7 @@ function App() {
     }, []);
 
   return (
-    <div className="App"><span className='start' >Start</span>
+    <div className="App"><span className='start' >Start <Analytics/></span>
 
       <section className='section1'>
           <header className='header'>
