@@ -108,8 +108,14 @@ function App() {
       <br/>
       <br/>
       <section className='sectionCarrousel'>
-        <CarouselComponent/>
+        {/* <div className='carrousel-Title'>Réalisations</div> */}
+        <div className='carrousel-container'><CarouselComponent/></div>
+        
       </section>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
 
 
       <header className="r">
