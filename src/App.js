@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Assurez-vous d'importer le fichier CSS d'AOS
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react"
 // import logo from './logo.svg';
 // import logo from '../public/Fusion-Inc-logo.jpg';
 import logo from './Fusion-Inc-logo.jpg';
@@ -25,7 +26,7 @@ function App() {
     }, []);
 
   return (
-    <div className="App"><span className='start' >Start <Analytics/></span>
+    <div className="App"><span className='start' >Start <Analytics/><SpeedInsights/></span>
 
       <section className='section1'>
           <header className='header'>
