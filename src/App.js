@@ -90,7 +90,7 @@ function App() {
               </div>
             </div>
             <div className='bottom-header2'>
-              <div className='bottom-header-logo'><img className='bottom-header-logo' src={logo}/></div>
+              <div className='bottom-header-logo'><img className='bottom-header-logo' src={logo} alt='logo fusion photo'/></div>
               <nav>
               <a href=""  rel="noopener noreferrer" className='bottom-header-items'>Acceuil</a>
               <a href="#About"  rel="noopener noreferrer" className='bottom-header-items'>A propos</a>
