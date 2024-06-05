@@ -32,18 +32,18 @@ function App() {
           <header className='header'>
             <div className='header-titte'>
               <div className='header-titte1'>
-                {Array.from('ELEVATE YOUR').map((letter, index) => (
+                {Array.from('ELEVEZ VOTRE').map((letter, index) => (
                   <span key={index} data-aos="fade-right" className='header-titte1'>{letter}</span>
                 ))}
               </div>
               <div className='header-titte2'>
-                {Array.from('PHOTO EXPERIENCE').map((letter, index) => (
+                {Array.from('EXPERIENCE PHOTOGRAPHIQUE').map((letter, index) => (
                   <span key={index} data-aos="fade-right" className='header-titte2'>{letter}</span>
                 ))}
               </div>
             </div>
             <div className='header-order-contenair'>
-              <div className='header-order'>PRE-ORDER</div>
+              <div className='header-order'>PRE-RESERVATION</div>
             </div>
           </header>
 
@@ -55,18 +55,18 @@ function App() {
             <div className='notification'>
               <div className='notification-list'>
                 <div className='notification-block' data-aos="zoom-in-up" data-aos-duration="1000">
-                  <div className='notification-block-title' >ADVANCED TECCHNOLOGY</div>
+                  <div className='notification-block-title' >Technologie Avancée</div>
                   <div className='notification-block-description'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Équipements modernes pour des photos précises.
+                     Portraits, événements, projets commerciaux, résultats garantis.
                   </div>
                 </div>
 
                 <div className='notification-block' data-aos="zoom-in-up" data-aos-duration="3000">
-                  <div className='notification-block-title'>FUTURISTIC DESIGN</div>
+                  <div className='notification-block-title'>Design Futuriste</div>
                   <div className='notification-block-description'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Un studio avant-gardiste à Kinshasa pour des séances photo uniques et immersives.
+                     Inspiration et innovation à chaque détail.
                   </div>
                 </div>
               </div>
@@ -79,12 +79,12 @@ function App() {
                <img src="https://img.freepik.com/premium-photo/illustration-beautiful-girl-with-long-hair_218381-22749.jpg" className="rate-img-profil" alt="logo" data-aos="zoom-in-right" />
                <img src="https://i.pinimg.com/736x/de/4f/9b/de4f9bee36a70826cde1d6750b6d78ec.jpg" className="rate-img-profil" alt="logo" data-aos="zoom-in-right" />
             </div>
-            <div className='rate-text' data-aos="zoom-in-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, consectetur adipiscing elit.</div>
+            <div className='rate-text' data-aos="zoom-in-right">Chaque photo raconte une histoire. Merci pour cette expérience extraordinaire et pour les images exceptionnelles." – Client Satisfait</div>
           </rate>
 
           <div className='bottom-header'>
             <div className='bottom-header1'>
-              <div className='bottom-header-text'>UNMATCHED <br/> PHOTO QUALITY</div>
+              <div className='bottom-header-text'>Qualité<br/>Photo Inégalée</div>
               <div className='bottom-header-button'>
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z"/></svg>
               </div>
@@ -92,9 +92,9 @@ function App() {
             <div className='bottom-header2'>
               <div className='bottom-header-logo'><img className='bottom-header-logo' src={logo}/></div>
               <nav>
-              <a href=""  rel="noopener noreferrer" className='bottom-header-items'>Home</a>
-              <a href="#About"  rel="noopener noreferrer" className='bottom-header-items'>About</a>
-              <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer" className='bottom-header-items'>Shop</a>
+              <a href=""  rel="noopener noreferrer" className='bottom-header-items'>Acceuil</a>
+              <a href="#About"  rel="noopener noreferrer" className='bottom-header-items'>A propos</a>
+              <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer" className='bottom-header-items'>Services</a>
               <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer" className='bottom-header-items'>FAQ</a>
               </nav>
               

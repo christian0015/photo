@@ -213,7 +213,7 @@ nav{
   font-size: 40px;
 }
 .header-titte2{
-  font-size: 30px;
+  font-size: 25px;
 }
 .header-order-contenair{padding: 0px 0 10px 12px;}
 .header-order{
@@ -222,10 +222,10 @@ nav{
 }
 /* *************** Article Screen *************** */
 article{
-  top:7%;
+  top:8%;
 }
 article iframe{
-  scale :0.7;
+  scale :0.6;
   width: 140%;
   margin-left: -75px;
 }

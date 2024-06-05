@@ -8,23 +8,22 @@ function aboutComponent() {
             <div className="center">
                 <div className="aboutBlockJ6">
                     <div className="detail">
-                        <div className="nameCompany">About Us</div>
-                        <h2 className="title">About Us</h2>
+                        <div className="nameCompany">A propos</div>
+                        <h2 className="title">A propos de nous</h2>
                         <div className="text">
-                            A voluptate sunt ipsa quo
-                            incidunt tenetur animi unde?
+                            Qui sommes nous ?..et quels services proposons nous?
 
                             <br/>
-                            <button>Contact Personnel</button>
+                            <button>Rendez_vous</button>
                         </div>
 
                     </div>
                     
                     <div className="description">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, vero blanditiis quas at.</p>
+                        <p>Nous sommes une agence de photographie <strong>Fusion-Photo</strong> basé à Kinshasa, RDC. Nos photographes professionnels sont dédiés à capturer la beauté et l'émotion de chaque instant, transformant vos souvenirs en trésors intemporels.</p>
                         <br/>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, officia fuga? Dignissimos,
-                        asperiores! Cum obcaecati deleniti nemo rerum numquam eum iusto iure suscipit.
+                        <p>Nous sommes fiers de vous offrir une qualité photo qui dépasse toutes les attentes.
+                            Grâce à notre maîtrise technique et à notre passion pour l'art visuel, chaque cliché devient une œuvre d'art.
                         </p>
                     </div>
 
