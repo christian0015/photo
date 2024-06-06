@@ -139,7 +139,7 @@ function Slide({ slide, offset }) {
   );
 }
 
-function SlideCarousel() {
+function SlideCarouselEss() {
   const [state, dispatch] = React.useReducer(slidesReducer, initialState);
 
   return (
@@ -157,4 +157,4 @@ function SlideCarousel() {
 
 
 
-export default SlideCarousel;
+export default SlideCarouselEss;
