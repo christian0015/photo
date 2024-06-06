@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import App from './Carousel';
 import Casting1 from './Asset/projets/Castings/ImageCasting (9).jpg';
 import Casting2 from './Asset/projets/Castings/ImageCasting (18).jpg';
 import Evenementiel1 from './Asset/projets/Evenementiels/ImageEvenementiel (29).jpg';
