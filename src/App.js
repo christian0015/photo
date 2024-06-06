@@ -11,6 +11,7 @@ import './component/aboutComponent';
 import AboutComponent from './component/aboutComponent';
 import CarouselComponent from './component/carouselComponent';
 import ServiceComponent from './component/serviceComponent';
+import FooterComponent from './component/footerComponent';
 
 function App() {
   const [message, setMessage] = useState('');
@@ -80,7 +81,7 @@ function App() {
                <img src="https://img.freepik.com/premium-photo/illustration-beautiful-girl-with-long-hair_218381-22749.jpg" className="rate-img-profil" alt="logo" data-aos="zoom-in-right" />
                <img src="https://i.pinimg.com/736x/de/4f/9b/de4f9bee36a70826cde1d6750b6d78ec.jpg" className="rate-img-profil" alt="logo" data-aos="zoom-in-right" />
             </div>
-            <div className='rate-text' data-aos="zoom-in-right">Chaque photo raconte une histoire. Merci pour cette expérience extraordinaire et pour les images exceptionnelles." – Client Satisfait</div>
+            <div className='rate-text' data-aos="zoom-in-right">Chaque photo raconte une histoire. Merci pour cette expérience extraordinaire et pour les images exceptionnelles." – Clients Satisfaits</div>
           </rate>
 
           <div className='bottom-header'>
@@ -96,7 +97,7 @@ function App() {
               <a href=""  rel="noopener noreferrer" className='bottom-header-items'>Acceuil</a>
               <a href="#About"  rel="noopener noreferrer" className='bottom-header-items'>A propos</a>
               <a href="#Services" rel="noopener noreferrer" className='bottom-header-items'>Services</a>
-              <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer" className='bottom-header-items'>FAQ</a>
+              <a href="#footer" target="_blank" rel="noopener noreferrer" className='bottom-header-items'>FAQ</a>
               </nav>
               
             </div>
@@ -141,6 +142,11 @@ function App() {
       </div>
 
       <br/><br/><p>{message}</p>
+
+      <div id="Footer">
+        <br/><br/>
+        <FooterComponent/>
+      </div>
     </div>
   );
 }
