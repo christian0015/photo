@@ -7,12 +7,14 @@
     align-items: start;
     padding: 20px;
     color: white;
+    overflow-x: hidden;
 }
 
 .footer-section {
     flex: 1;
     margin-right: 20px;
     color: rgb(235, 233, 233);
+    overflow-x: auto;
 }
 
 .footer-logo {
