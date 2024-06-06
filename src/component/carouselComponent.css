@@ -100,7 +100,7 @@
   transform-style: preserve-3d;
   transform: translateZ(2rem);
   transition: opacity 0.3s linear;
-  text-shadow: 0 0.1rem 1rem #000;
+  text-shadow: 1px .3rem .5rem #000000;
   opacity: 0;
 
   .slideSubtitle,
@@ -218,7 +218,7 @@
     align-content: center;
   
     transform-style: preserve-3d;
-    transform: perspective(80px) translateX(calc(95% * var(--offset)))
+    transform: perspective(78px) translateX(calc(90% * var(--offset)))
       rotateY(calc(-55deg * var(--dir)));
   }
 
@@ -227,7 +227,7 @@
     transform-style: preserve-3d;
     transform: translateZ(2rem);
     transition: opacity 0.3s linear;
-    text-shadow: 0 0.1rem 1rem #000;
+    /* text-shadow: 0 0.1rem 1rem #000; */
     opacity: 0;
   
     .slideTitle {

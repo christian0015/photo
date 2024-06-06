@@ -36,13 +36,13 @@ const slides = [
   {
     title: "Fête",
     subtitle: "Kinshasa, RDC",
-    description: "Un paradis terrestre",
+    description: "Gala et activité",
     image: Evenementiel2
   },
   {
     title: "Beauté Congolaise",
     subtitle: "Kinshasa, RDC",
-    description: "Un coin de paradis",
+    description: "Immortalisation",
     image: Evenementiel3
   },
   {
@@ -54,7 +54,7 @@ const slides = [
   {
     title: "Élégance en Affaires",
     subtitle: "Kinshasa, RDC",
-    description: "L'excellence visuelle",
+    description: "L'excellence artistique",
     image: Business2
   },
   {

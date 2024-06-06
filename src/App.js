@@ -10,6 +10,7 @@ import './App.css';
 import './component/aboutComponent';
 import AboutComponent from './component/aboutComponent';
 import CarouselComponent from './component/carouselComponent';
+import ServiceComponent from './component/serviceComponent';
 
 function App() {
   const [message, setMessage] = useState('');
@@ -94,7 +95,7 @@ function App() {
               <nav>
               <a href=""  rel="noopener noreferrer" className='bottom-header-items'>Acceuil</a>
               <a href="#About"  rel="noopener noreferrer" className='bottom-header-items'>A propos</a>
-              <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer" className='bottom-header-items'>Services</a>
+              <a href="#Services" rel="noopener noreferrer" className='bottom-header-items'>Services</a>
               <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer" className='bottom-header-items'>FAQ</a>
               </nav>
               
@@ -128,15 +129,18 @@ function App() {
         </a> */}
       </header>
 
-      <main id="About">
-      <AboutComponent/>
-        <p>{message}</p>
-        
-      </main>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
+      <div id="About">
+        <AboutComponent/>
+        <br/><br/>
+      </div>
+
+      <div id="Services">
+        <br/><br/>
+        <ServiceComponent/>
+        <br/><br/><br/>
+      </div>
+
+      <br/><br/><p>{message}</p>
     </div>
   );
 }
