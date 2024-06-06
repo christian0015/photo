@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import SlideCarousel from './Carousel';
+import SlideCarousel from './App';
 
 import './carouselComponent.css';
 
