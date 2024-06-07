@@ -42,6 +42,11 @@
   border-radius: 0 0 0 25px;
   display: flex;
   background-color: #2b302c;
+  color: white;
+  text-decoration: none;
+  a{
+    color: white;
+    text-decoration: salmon;}
 }.header-order{
   font-size: 16px;
   font-family: "Exo 2", sans-serif;

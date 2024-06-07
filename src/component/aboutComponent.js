@@ -14,7 +14,9 @@ function aboutComponent() {
                         Qui sommes-nous ? Et quels services proposons-nous ?
 
                             <br/>
+                            <a href="https://api.whatsapp.com/send/?phone=212713088840&text=Je+suis+int%C3%A9ress%C3%A9+par+vos+services%2C+je+souhaite+un+rendez-vous+ou+une+réservation&type=phone_number&app_absent=0">
                             <button>Rendez_vous</button>
+                            </a>
                         </div>
 
                     </div>
