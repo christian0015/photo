@@ -28,7 +28,7 @@ function FooterComponent() {
                 </div>
             </div>
             <div className="footer-section">
-                <h4>DEVElOPEUR</h4>
+                <h4>DEVELOPPEUR</h4>
                 <p onCopy={"christiantukunda15@gmail.com"}>christiantukunda15@gmail.com</p>
                 <p>Casablanca, Maroc</p>
                 <p>Christian Tukunda</p>
