@@ -32,7 +32,7 @@ function FooterComponent() {
                 <p onCopy={"christiantukunda15@gmail.com"}>christiantukunda15@gmail.com</p>
                 <p>Casablanca, Maroc</p>
                 <p>Christian Tukunda</p>
-                <p>+212 713 088 840</p>
+                <p>+212 634 699 940</p>
             </div>
         </footer>
     );
